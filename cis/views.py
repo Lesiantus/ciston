@@ -24,8 +24,8 @@ class CombineListView(generics.ListAPIView):
         shop = self.serializer_class_Shop(self.get_queryset_Shop(), many=True)
         faq = self.serializer_class_Faq(self.get_queryset_Faq(), many=True)
         return Response({
-            "**LAND**": land.data,
-            "**SHOP**": shop.data,
-            "**FAQ**": faq.data
+            "LAND": land.data,
+            "SHOP": shop.data,
+            "FAQ": faq.data
         })
 # Create your views here.
