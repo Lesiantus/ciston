@@ -45,6 +45,7 @@ class Land(models.Model):
 class Shop(models.Model):
     link_url = models.URLField('ссылка на магазин', null=True, blank=True)
     image_for = models.ImageField('картинка партнера', null=True, blank=True, upload_to='ecoc/photos/')
+    event = models.CharField('event', null=True, blank=True, max_length=100)
 
 
 class Faq(models.Model):
