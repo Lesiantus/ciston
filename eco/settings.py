@@ -25,7 +25,7 @@ SECRET_KEY = 'd0tz4h-tp0q_64y+u2am!xh)%%4c@$8lnxdp9mbp-$(moj!4bw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '111.222.333.444', 'acino.catzwolf.ru']
 
 
 # Application definition
