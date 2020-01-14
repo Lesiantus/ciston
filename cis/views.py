@@ -20,9 +20,9 @@ class CombineListView(generics.ListAPIView):
         return Faq.objects.all()
 
     def list(self, request, *args, **kwargs):
-        land = self.serializer_class_Land(self.get_queryset_Land(), many=True)
-        shop = self.serializer_class_Shop(self.get_queryset_Shop(), many=True)
-        faq = self.serializer_class_Faq(self.get_queryset_Faq(), many=True)
+        land = self.serializer_class_Land(self.get_queryset_Land(), many=True, context=self.get_serializer_context())
+        shop = self.serializer_class_Shop(self.get_queryset_Shop(), many=True, context=self.get_serializer_context())
+        faq = self.serializer_class_Faq(self.get_queryset_Faq(), many=True, context=self.get_serializer_context())
         return Response({
             "LAND": land.data,
             "SHOP": shop.data,

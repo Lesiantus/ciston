@@ -120,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/back/ciston/static/'
-STATIC_ROOT = "/var/www/static/"
-MEDIA_ROOT = "/var/www/media/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/back/ciston/media/'
+
