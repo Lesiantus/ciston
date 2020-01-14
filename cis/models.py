@@ -31,6 +31,7 @@ class Land(models.Model):
     text_slider5 = models.TextField('надпись под картинкой-слайдером 6')
     title_2 = models.CharField('заголовок второй сноски', max_length=100)
     text1 = models.TextField('надпись второй сноски1')
+    text11 = models.TextField('Вторая колонки сноски1', null=True, blank=True)
     picture_big = models.ImageField('Большая картинка вторая сноска', upload_to='ecoc/photos/')
     text2 = models.TextField('надпись второй сноски2')
     picture_little = models.FileField('первая маленькая картинка, вторая сноска', upload_to='ecoc/photos/')
