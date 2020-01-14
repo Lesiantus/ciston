@@ -119,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = "/var/www/acino.catzwolf.ru/static/"
-MEDIA_ROOT = "/var/www/acino.catzwolf.ru/media/"
-MEDIA_URL = '/media/'
+STATIC_URL = '/back/ciston/static/'
+STATIC_ROOT = "/var/www/static/"
+MEDIA_ROOT = "/var/www/media/"
+MEDIA_URL = '/back/ciston/media/'
